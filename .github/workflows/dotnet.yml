@@ -21,8 +21,10 @@ jobs:
       run: dotnet restore --source "https://www.nuget.org/api/v2/" --source "http://nuget.episerver.com/feed/packages.svc/"
     - name: Build
       run: dotnet build --no-restore
-    - uses: ncipollo/release-action@v1
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
       with:
-        artifacts: "/home/runner/work/Duk.Episerver.Profiles.MultiUserDevice/Duk.Episerver.Profiles.MultiUserDevice/src/Duk.Episerver.Profiles.MultiUserDevice/bin/Debug/Duk.Episerver.Profiles.MultiUserDevice.1.0.0.nupkg"
-        token: ${{ secrets.GITHUB_TOKEN }}
-        tag: "1.0.0"
+        files: /home/runner/work/Duk.Episerver.Profiles.MultiUserDevice/Duk.Episerver.Profiles.MultiUserDevice/src/Duk.Episerver.Profiles.MultiUserDevice/bin/Debug/Duk.Episerver.Profiles.MultiUserDevice.1.0.0.nupkg
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
