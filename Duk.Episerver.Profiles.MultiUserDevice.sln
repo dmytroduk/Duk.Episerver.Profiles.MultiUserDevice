@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duk.Episerver.Profiles.MultiUserDevice", "src\Duk.Episerver.Profiles.MultiUserDevice\Duk.Episerver.Profiles.MultiUserDevice.csproj", "{3F2EB71A-AE8B-42C5-880D-C7F63EE90C7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F2EB71A-AE8B-42C5-880D-C7F63EE90C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2EB71A-AE8B-42C5-880D-C7F63EE90C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2EB71A-AE8B-42C5-880D-C7F63EE90C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2EB71A-AE8B-42C5-880D-C7F63EE90C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9045B4A2-5287-4568-A5E9-1E602E651081}
+	EndGlobalSection
+EndGlobal
