@@ -25,3 +25,4 @@ jobs:
       with:
         artifacts: "/home/runner/work/Duk.Episerver.Profiles.MultiUserDevice/Duk.Episerver.Profiles.MultiUserDevice/src/Duk.Episerver.Profiles.MultiUserDevice/bin/Debug/Duk.Episerver.Profiles.MultiUserDevice.1.0.0.nupkg"
         token: ${{ secrets.GITHUB_TOKEN }}
+        tag: "1.0.0"
