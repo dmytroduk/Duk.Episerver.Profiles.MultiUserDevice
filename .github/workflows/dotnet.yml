@@ -30,9 +30,9 @@ jobs:
     - name: Publish
       run: |
         dotnet nuget add source --username dmytroduk --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/dmytroduk/index.json"
-        dotnet nuget push "src/Duk.Episerver.Profiles.MultiUserDevice/bin/Debug/Duk.Episerver.Profiles.MultiUserDevice.1.0.0.nupkg" --source "github"
+        dotnet nuget push "src/Duk.Episerver.Profiles.MultiUserDevice/bin/Release/Duk.Episerver.Profiles.MultiUserDevice.1.0.0.nupkg" --source "github"
     - name: Release    
       uses: ncipollo/release-action@v1
       with:
-        artifacts: "src/Duk.Episerver.Profiles.MultiUserDevice/bin/Debug/Duk.Episerver.Profiles.MultiUserDevice.1.0.0.nupkg"
+        artifacts: "src/Duk.Episerver.Profiles.MultiUserDevice/bin/Release/Duk.Episerver.Profiles.MultiUserDevice.1.0.0.nupkg"
         token: ${{ secrets.GITHUB_TOKEN }}
