@@ -21,6 +21,10 @@ jobs:
       run: dotnet restore --source "https://www.nuget.org/api/v2/" --source "http://nuget.episerver.com/feed/packages.svc/"
     - name: Build
       run: dotnet build --no-restore
+  
+  publish:
+    runs-on: ubuntu-latest
+    steps:
     - name: Publish
       if: startsWith(github.ref, 'refs/tags/')
       run: |
